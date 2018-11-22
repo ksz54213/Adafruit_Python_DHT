@@ -22,7 +22,7 @@
 import sys
 
 import Adafruit_DHT
-
+import time
 
 # Parse command line parameters.
 sensor_args = { '11': Adafruit_DHT.DHT11,
@@ -56,3 +56,4 @@ while True:
 	else:
     		print('Failed to get reading. Try again!')
     		sys.exit(1)
+	time.sleep(1)
